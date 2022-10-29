@@ -24,12 +24,12 @@ const contractRouter = new ethers.Contract(addressRouter,routerABI,provider)
 //Call the Blockchain
 const getPrices = async (amount) => {
     //Convert the amount In
-    const contractToken = new ethers.Contract(addressFrom)
+    const contractToken = new ethers.Contract(addressFrom,erc20ABI,provider)
+    const decimals = await contractToken.decimals()
+    console.log(decimals)
 }
 
 const amount = "500"
+
 getPrices(amount)
 
-console.log(provider)
-console.log(contractFactory)
-console.log(contractRouter)
