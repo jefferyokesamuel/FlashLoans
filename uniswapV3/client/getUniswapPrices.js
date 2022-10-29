@@ -9,7 +9,18 @@ const provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alc
 async function getPrice() {
     const quoterAddress = "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"
     const quoterContract = new ethers.Contract(quoterAddress,QuoterABI,provider)
-    console.log(quoterContract)
+    // console.log(quoterContract)
+
+    const quoteExactSingle = await quoterContract.quoteExactOutputSingle(
+        "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+        "15",
+        "500",
+        "200"
+    )
+
+    console.log(quoteExactSingle)
 }
+
 
 getPrice()
