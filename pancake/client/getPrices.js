@@ -17,4 +17,10 @@ const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.bina
 
 //COnnect to Factore
 const contractFactory = new ethers.Contract(factoryAddress,factoryABI,provider)
+
+//Connect to Router
+const contractRouter = new ethers.Contract(addressRouter,routerABI,provider)
+
 console.log(provider)
+console.log(contractFactory)
+console.log(contractRouter)
