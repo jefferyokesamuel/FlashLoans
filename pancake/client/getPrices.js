@@ -13,3 +13,4 @@ const {
     routerABI } = require("./abiList")
 
 //Standard Provider
+const provider = new ethers.provider
