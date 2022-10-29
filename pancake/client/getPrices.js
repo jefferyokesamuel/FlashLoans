@@ -42,6 +42,7 @@ const getPrices = async (amount) => {
     const readableAmount = ethers.utils.formatUnits(amountsOut[1].toString(),decimals)
 
      //Log Output
+    console.log(readableAmount)
 }
 const amount = "500"
 
