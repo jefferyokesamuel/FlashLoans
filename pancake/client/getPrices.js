@@ -21,6 +21,15 @@ const contractFactory = new ethers.Contract(factoryAddress,factoryABI,provider)
 //Connect to Router
 const contractRouter = new ethers.Contract(addressRouter,routerABI,provider)
 
+//Call the Blockchain
+const getPrices = async (amount) => {
+    //Convert the amount In
+    const contractToken = new ethers.Contract(addressFrom)
+}
+
+const amount = "500"
+getPrices(amount)
+
 console.log(provider)
 console.log(contractFactory)
 console.log(contractRouter)
