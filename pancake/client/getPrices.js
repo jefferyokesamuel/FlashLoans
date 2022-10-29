@@ -31,7 +31,7 @@ const getPrices = async (amount) => {
     //Get AMounts Out
     const amountsOut = await contractRouter.getAmountsOut(amountIn, [
         addressFrom, //BUSD
-        addressTo, //WETH
+        addressTo, //WBNB
     ]) 
 
     //Convert Amount out - decimals
@@ -39,9 +39,8 @@ const getPrices = async (amount) => {
     const decimals2 = await token2.decimals()
 
      //Convert Amount out - decimals
-     const amountOut = ethers.utils.formatUnits(amountOut[1].toString(),decimals)
 
-    console.log(decimals2)
+     //Log Output
 }
 const amount = "500"
 
