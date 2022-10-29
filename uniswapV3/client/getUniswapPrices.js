@@ -12,21 +12,13 @@ async function getPrice(addressFrom, addressTo, readableAmount) {
     const quoterContract = new ethers.Contract(quoterAddress,QuoterABI,provider)
     // console.log(quoterContract)
 
-    const quoteExactSingle = await quoterContract.quoteExactOutputSingle(
-        "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-        "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
-        "15",
-        "500",
-        "200"
-    )
-
-    console.log(quoteExactSingle)
+    const amountIn = ethers.utils.parseUnits(readableAmount, 6)
 }
 
 const main = async () => {
     const addressFrom = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" //USDC
     const addressTo = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2" //WETH
-    const readableAmount = "2900"
+    const readableAmount = "1622"
     const amountOut = await getPrice(addressFrom, addressTo)
     console.log(amountOut);
 }
