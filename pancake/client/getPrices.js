@@ -34,6 +34,10 @@ const getPrices = async (amount) => {
         addressTo, //WETH
     ]) 
 
+    console.log(amountsOut)
+    //Convert Amount out
+    const token2 = new ethers.Contract(addressTo,erc20ABI,provider)
+}
 const amount = "500"
 
 getPrices(amount)
