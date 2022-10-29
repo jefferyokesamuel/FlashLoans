@@ -27,9 +27,12 @@ const getPrices = async (amount) => {
     const contractToken = new ethers.Contract(addressFrom,erc20ABI,provider)
     const decimals = await contractToken.decimals()
     const amountIn = ethers.utils.parseUnits(amount, decimals).toString()
-    console.log(decimals)
-    console.log(amountIn)
-}
+   
+    //Get AMounts Out
+    const amountsOut = await contractRouter.getAmountsOut(amountIn, [
+        addressFrom, //BUSD
+        addressTo, //WETH
+    ]) 
 
 const amount = "500"
 
