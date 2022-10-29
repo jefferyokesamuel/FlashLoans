@@ -13,4 +13,4 @@ const {
     routerABI } = require("./abiList")
 
 //Standard Provider
-const provider = new ethers.provider
+const provider = new ethers.providers.JsonRpcProvider()
