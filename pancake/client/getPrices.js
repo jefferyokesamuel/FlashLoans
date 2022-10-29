@@ -13,4 +13,6 @@ const {
     routerABI } = require("./abiList")
 
 //Standard Provider
-const provider = new ethers.providers.JsonRpcProvider()
+const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.binance.org/")
+
+console.log(provider)
