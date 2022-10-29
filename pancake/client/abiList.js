@@ -11,7 +11,7 @@ const pairABI = [
 ]
 
 const routerABI = [
-    "function getAmountsOut(uint amountIn, address[] memory path) public view virtual override returns (uint[] memory amounts)"
+    "function getAmountsOut(uint a mountIn, address[] memory path) public view virtual override returns (uint[] memory amounts)"
 ]
 
 module.exports = {
