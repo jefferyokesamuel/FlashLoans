@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@uniswap/sdk-core": "^3.1.0",
+    "@uniswap/v3-sdk": "^3.9.0"
   }
 }
