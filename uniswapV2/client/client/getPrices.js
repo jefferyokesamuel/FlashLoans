@@ -13,7 +13,7 @@ const {
     routerABI } = require("./abiList")
 
 //Standard Provider
-const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.binance.org/")
+const provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/DFo-cWrsIrwN46dSsl1NIYdrX3jqtxhD")
 
 //COnnect to Factore
 const contractFactory = new ethers.Contract(factoryAddress,factoryABI,provider)
@@ -44,7 +44,7 @@ const getPrices = async (amount) => {
      //Log Output
     console.log(readableAmount)
 }
-const amount = "500"
+const amount = "1"
 
 getPrices(amount)
 
