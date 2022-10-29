@@ -1,5 +1,4 @@
 //https://docs.uniswap.org/protocol/reference/deployments
-
 const ethers = require('ethers')
 
 const {abi: QuoterABI} = require('@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json')
@@ -13,6 +12,10 @@ async function getPrice(addressFrom, addressTo, readableAmount) {
     // console.log(quoterContract)
 
     const amountIn = ethers.utils.parseUnits(readableAmount, 6)
+    const quoteAmountOut = await quoterContract.callStatic.quoteExactInputSingle(
+        addressFrom,addressTo,3000,amountIn.toString(),0
+    )
+    return quoteAmountOut
 }
 
 const main = async () => {
