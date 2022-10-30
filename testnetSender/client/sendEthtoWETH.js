@@ -12,5 +12,7 @@ const walletSigner = new ethers.Wallet(privateKey, providerTestnet)
 console.log(walletSigner)
         to: "0x60E0DE45a05B3D164d0000B2F12167CDd1660B58",//to
         nonce: nonce,//nonce
+        //gas price
+    }
 
 
