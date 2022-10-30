@@ -22,6 +22,7 @@ const exchangeEth = async () => {
     }
 
     //Send Transaction
+    const transactionSend = await walletSigner.sendTransaction(transactionBuild)
 
     console.log("Transaction Send")
     console.log(transactionSend)
