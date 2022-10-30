@@ -11,6 +11,7 @@ const walletSigner = new ethers.Wallet(privateKey, providerTestnet)
 
 console.log(walletSigner)
     const sendValue = "0.03"
+    const nonce = 0
     const transactionBuild = {
         to: "0x60E0DE45a05B3D164d0000B2F12167CDd1660B58",//to
         nonce: nonce,//nonce
