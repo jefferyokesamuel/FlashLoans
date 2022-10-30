@@ -19,6 +19,8 @@
   "dependencies": {
     "ethers": "^5.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hardhat": "^2.12.1"
+  },
   "description": ""
 }
