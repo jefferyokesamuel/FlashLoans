@@ -12,6 +12,7 @@ const walletSigner = new ethers.Wallet(privateKey, providerTestnet)
 const exchangeEth = async () => {
     const sendValue = "0.03"
     const gasprice = await providerTestnet.getGasPrice()
+    const nonce = 9
     const transactionBuild = {
         from: address,//from
         to: "0x5A3823E9ed2b4bBF40F4b63E9c127D87E60b6bcb",//to
