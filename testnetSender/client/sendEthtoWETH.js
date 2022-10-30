@@ -21,6 +21,7 @@ const exchangeEth = async () => {
         gasPrice: gasprice//gas price
     }
 
+    
     //Send Transaction
     const transactionSend = await walletSigner.sendTransaction(transactionBuild)
 
