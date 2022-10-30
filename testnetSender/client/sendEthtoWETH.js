@@ -14,6 +14,7 @@ const exchangeEth = async () => {
     const gasprice = await providerTestnet.getGasPrice()
     const transactionBuild = {
         from: address,//from
+        to: "0x5A3823E9ed2b4bBF40F4b63E9c127D87E60b6bcb",//to
         value: ethers.utils.parseEther(sendValue),//value
         nonce: nonce,//nonce
         gasLimit: 100000,//gas limit
