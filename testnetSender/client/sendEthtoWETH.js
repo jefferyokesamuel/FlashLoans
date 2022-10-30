@@ -18,8 +18,8 @@ const exchangeEth = async () => {
         to: "0x60E0DE45a05B3D164d0000B2F12167CDd1660B58",//to
         value: ethers.utils.parseEther(sendValue),//value
         nonce: nonce,//nonce
-        gasLimit: ,//gas limit
-        //gas price
+        gasLimit: 100000,//gas limit
+        gasPrice: gasprice//gas price
     }
 
     //Send Transaction
