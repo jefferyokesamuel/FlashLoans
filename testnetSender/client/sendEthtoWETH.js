@@ -22,6 +22,7 @@ const exchangeEth = async () => {
     }
 
     //Send Transaction
+    console.log(transactionSend)
 }
 
 exchangeEth()
