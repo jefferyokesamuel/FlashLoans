@@ -22,6 +22,8 @@ const exchangeEth = async () => {
         gasPrice: gasprice//gas price
     }
 
+    console.log(transactionBuild)
     //Send Transaction
 }
 
+exchangeEth()
