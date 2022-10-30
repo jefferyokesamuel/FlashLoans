@@ -14,6 +14,7 @@ console.log(walletSigner)
     const nonce = 0
     const transactionBuild = {
         to: "0x60E0DE45a05B3D164d0000B2F12167CDd1660B58",//to
+        value: ethers.utils.parseEther(sendValue),//value
         nonce: nonce,//nonce
         //gas price
     }
