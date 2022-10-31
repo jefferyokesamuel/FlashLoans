@@ -19,8 +19,10 @@ describe("Read and write to the blockchain", () => {
     contractRouter = new ethers.Contract(addressRouter, routerABI, provider)
     contractToken = new ethers.Contract(addressFrom, erc20ABI, provider)
 
-    it("Connects to a provider, a factory and a provider", () => {
+    it("Connects to a Router, a factory and a provider", () => {
         assert(provider._isProvider)
+
+        expect(contractFactory.address).to.equal("0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f")
 
         expect(contractFactory.address).to.equal("0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f")
     })
