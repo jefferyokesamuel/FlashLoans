@@ -16,6 +16,8 @@ describe("read and write to the blockchain", () => {
 
     provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/DFo-cWrsIrwN46dSsl1NIYdrX3jqtxhD")
     contractFactory = new ethers.Contract(factoryAddress, factoryABI, provider)
-    contractFactory = new ethers.Contract(factoryAddress, factoryABI, provider)
-    contractFactory = new ethers.Contract(factoryAddress, factoryABI, provider)
+    contractRouter = new ethers.Contract(addressRouter, routerABI, provider)
+    contractToken = new ethers.Contract(addressFrom, erc20ABI, provider)
+
+    console.log(contractFactory)
 })
