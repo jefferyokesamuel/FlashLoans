@@ -41,5 +41,6 @@ describe("Read and write to the blockchain", () => {
         const amount = await getAmountsOut()
         assert(amount)
         console.log(amount)
+        assert(amount.toString())
     })
 })
