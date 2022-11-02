@@ -26,7 +26,7 @@ describe("Read and write to the blockchain", () => {
             addressFrom,
             addressTo,
         ])
-        return 
+        return amountsOut[1].toString()
     } 
 
     it("Connects to a Router, a factory and a provider", () => {
