@@ -39,5 +39,7 @@ describe("Read and write to the blockchain", () => {
 
     it("gets the price of amountsOut", () => {
         const amount = getAmountsOut()
+        console.log(amount)
+        assert()
     })
 })
