@@ -22,6 +22,7 @@ describe("Read and write to the blockchain", () => {
     const getAmountsOut = async () => {
             addressFrom,
             addressTo
+            addressTo,
         ])
     
         const amountsOut = await contractRouter.getAmountsOut
