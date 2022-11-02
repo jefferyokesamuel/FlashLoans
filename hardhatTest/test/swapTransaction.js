@@ -24,8 +24,7 @@ describe("Read and write to the blockchain", () => {
             addressTo
             addressTo,
         ])
-    
-        const amountsOut = await contractRouter.getAmountsOut
+        return 
     } 
 
     it("Connects to a Router, a factory and a provider", () => {
