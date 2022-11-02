@@ -20,6 +20,7 @@ describe("Read and write to the blockchain", () => {
     contractToken = new ethers.Contract(addressFrom, erc20ABI, provider)
 
     const getAmountsOut = async () => {
+        decimals = await contractToken.decimals()
             addressFrom,
             addressTo,
         ])
