@@ -44,4 +44,8 @@ describe("Read and write to the blockchain", () => {
         const amount = await getAmountsOut()
         assert(amount.toString())
     })
+
+    it("Sends a transaction, i.e swaps token", async () => {
+        
+    })
 })
