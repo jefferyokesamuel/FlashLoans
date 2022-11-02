@@ -22,6 +22,7 @@ describe("Read and write to the blockchain", () => {
     const getAmountsOut = async () => {
         decimals = await contractToken.decimals()
         const amountsOut = await contractRouter.getAmountsOut
+    } 
 
     it("Connects to a Router, a factory and a provider", () => {
         assert(provider._isProvider)
