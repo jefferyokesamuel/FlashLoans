@@ -47,7 +47,6 @@ describe("Read and write to the blockchain", () => {
     it("Sends a transaction, i.e swaps token", async () => {
         const ownerSigner = await ethers.getSigners()
         const newSigner = await ownerSigner[0]
-        console.log(newSigner)
 
         const mainnetRouter = new ethers.Contract(addressRouter, routerABI, newSigner)
 
@@ -74,6 +73,9 @@ describe("Read and write to the blockchain", () => {
         )
 
         console.log("SWAP TRANSACTION")
-        console.log()
+        console.log(txSwap)
+        console.log("")
+        console.log("TRANSACTION RECIPT")
+        console.log(txRecipt)
     })
 })
