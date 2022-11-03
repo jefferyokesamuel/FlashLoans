@@ -64,7 +64,9 @@ describe("Read and write to the blockchain", () => {
             {
                 gasLimit: 200000,
                 gasPrice: ethers.utils.parseUnits("5.5", "gwei"),
-            }//Gas
-            )
+            } //Gas
+        )
+
+        const mainnetForkProvider = 
     })
 })
