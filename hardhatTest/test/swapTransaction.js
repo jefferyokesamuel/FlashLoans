@@ -18,6 +18,7 @@ describe("Read and write to the blockchain", () => {
     contractFactory = new ethers.Contract(factoryAddress, factoryABI, provider)
     contractRouter = new ethers.Contract(addressRouter, routerABI, provider)
     contractToken = new ethers.Contract(addressFrom, erc20ABI, provider)
+    amountIn = ethers.utils.parseUnits(readableAmount, decimals).toString()
 
     const getAmountsOut = async () => {
         decimals = await contractToken.decimals()
