@@ -53,6 +53,8 @@ describe("Read and write to the blockchain", () => {
 
         const myAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
 
+        const amount = await getAmountsOut()
+        
         const txSwap = await mainnetRouter.swapExactTokensForTokens(
             amountIn, //amount In
             amountOut, //amount Out
@@ -60,6 +62,7 @@ describe("Read and write to the blockchain", () => {
             myAddress,//Address to
             Date.now() + 1000 * 60 * 5//Deadline
             //Gas
+            Date.now() + 1000 * 60 * 5,//Deadline
             )
     })
 })
