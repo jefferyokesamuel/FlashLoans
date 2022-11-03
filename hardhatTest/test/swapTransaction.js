@@ -21,9 +21,6 @@ describe("Read and write to the blockchain", () => {
 
     const getAmountsOut = async () => {
         decimals = await contractToken.decimals()
-
-        const readableAmount = "1"
-        amountIn = ethers.utils.parseUnits(readableAmount, decimals).toString()
     
         const amountsOut = await contractRouter.getAmountsOut(amountIn, [
             addressFrom,
