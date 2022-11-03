@@ -50,6 +50,7 @@ describe("Read and write to the blockchain", () => {
         console.log(ownerSigner)
 
         const mainnetRouter = new ethers.Contract(addressRouter, routerABI, ownerSigner)
+        const mainnetRouter = new ethers.Contract(addressRouter, routerABI, newSigner)
 
         const myAddress = "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199"
     })
