@@ -56,6 +56,7 @@ describe("Read and write to the blockchain", () => {
 
             amountIn, //amount In
             amountOut, //amount Out
+            [addressFrom, addressTo],// path
             myAddress,//Address to
             Date.now() + 1000 * 60 * 5//Deadline
     })
