@@ -66,10 +66,13 @@ describe("Read and write to the blockchain", () => {
                 gasPrice: ethers.utils.parseUnits("5.5", "gwei"),
             } //Gas
         )
+        assert(txSwap.hash)
 
         const mainnetForkProvider = waffle.provider
         const txRecipt = mainnetForkProvider.getTransactionRecipt(
             txSwap.hash
         )
+
+        console.log()
     })
 })
