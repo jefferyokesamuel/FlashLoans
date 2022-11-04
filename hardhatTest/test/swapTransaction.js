@@ -1,6 +1,5 @@
-const { ethers } = require('hardhat');
+const { ethers, waffle } = require('hardhat');
 const { expect, assert } = require("chai");
-
 
 const { factoryAddress,
     addressRouter,
@@ -68,7 +67,9 @@ describe("Read and write to the blockchain", () => {
         )
         assert(txSwap.hash)
 
-        const mainnetForkProvider = waffle.provider
+        const { mainnetForkProvider } = waffle.provider
+        //  const waff = waffle
+        //  console.log(waff)
         const txRecipt = mainnetForkProvider.getTransactionRecipt(
             txSwap.hash
         )
