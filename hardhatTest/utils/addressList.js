@@ -7,5 +7,4 @@ module.exports = {
     factoryAddress,
     addressRouter,
     addressFrom,
-    addressTo
 }
