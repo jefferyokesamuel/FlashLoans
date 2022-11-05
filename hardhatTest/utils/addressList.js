@@ -5,6 +5,5 @@ const addressTo = "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2" //SUSHI
 
 module.exports = {
     factoryAddress,
-    addressRouter,
     addressFrom,
 }
