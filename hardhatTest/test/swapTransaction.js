@@ -1,4 +1,5 @@
-const { ethers, waffle } = require('hardhat');
+const { ethers } = require("hardhat");
+const { waffle } = require("@nomicfoundation/hardhat-chai-matchers")
 const { expect, assert } = require("chai");
 
 const { factoryAddress,
@@ -71,8 +72,8 @@ describe("Read and write to the blockchain", () => {
 
         const { mainnetForkProvider } = waffle.provider
         console.log(mainnetForkProvider)
-        
-        const txRecipt = mainnetForkProvider.getTransactionRecipt(
+
+        const txRecipt = await mainnetForkProvider.getTransactionRecipt(
             txSwap.hash
         )
 
