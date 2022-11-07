@@ -74,6 +74,7 @@ describe("Read and write to the blockchain", () => {
         const txRecipt = await mainnetForkProvider.getTransactionRecipt(
             txSwap.hash
         )
+        // )
 
         console.log("SWAP TRANSACTION")
         console.log(txSwap)
