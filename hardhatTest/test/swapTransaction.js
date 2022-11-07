@@ -53,6 +53,7 @@ describe("Read and write to the blockchain", () => {
         const myAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
 
         const amountOut = await getAmountsOut()
+        console.log("AMOUNT OUT")
         console.log(amountOut)
 
         const txSwap = await mainnetRouter.swapExactTokensForTokens(
