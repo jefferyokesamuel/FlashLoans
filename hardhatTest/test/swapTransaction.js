@@ -81,7 +81,6 @@ describe("Read and write to the blockchain", () => {
         console.log("SWAP TRANSACTION")
         console.log(txSwap)
         console.log("")
-        console.log("TRANSACTION RECIPT")
         console.log(txRecipt)
     })
 })
