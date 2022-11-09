@@ -70,7 +70,9 @@ describe("Read and write to the blockchain", () => {
         const mainnetForkProvider = ethers.provider
         console.log(txSwap)
 
-        // const txRecipt = await mainnetForkProvider.getTransactionRecipt(
+        const reciept = await mainnetForkProvider.formats
+        console.log(reciept) 
+        // const txRecipt = await mainnetForkProvider.receipt(
         //     txSwap.hash
         // )
 
