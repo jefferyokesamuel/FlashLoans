@@ -68,7 +68,7 @@ describe("Read and write to the blockchain", () => {
         )
         assert(txSwap.hash)
 
-        const mainnetForkProvider = ethers.provider
+        const mainnetForkProvider = waffle.provider
         console.log(mainnetForkProvider)
 
         // const txRecipt = await mainnetForkProvider.getTransactionRecipt(
