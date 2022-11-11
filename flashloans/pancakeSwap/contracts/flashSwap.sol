@@ -13,5 +13,6 @@ import "./interfaces/IUniswapV2Factory.sol";
 import  "./interfaces/IERC20.sol";
 
 contract PancakeFlashSwap {
+    using SafeERC20 for IERC20;
 
 }
