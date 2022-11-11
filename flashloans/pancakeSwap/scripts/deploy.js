@@ -7,5 +7,6 @@ async function main() {
 
   console.log()
   console.log("Account Balance", (await deployer.getBalance()).toString()) 
+
   const token = await Token.deploy()
 } 
