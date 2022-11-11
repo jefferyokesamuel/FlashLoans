@@ -1,6 +1,14 @@
+const { version } = require("chai");
+
 require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
+  solidity: {
+    compilers:[
+        {version: "0.5.5"}, 
+        {version: "0.6.6"}, 
+        {version: "0.8.8"}
+    ]
+  }
 };
