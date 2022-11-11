@@ -21,4 +21,5 @@ contract PancakeFlashSwap {
 
     address private constant wBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
     address private constant USDT = 0x55d398326f99059fF775485246999027B3197955;
+    address private constant CROX = 0x2c094F5A7D1146BB93850f629501eB749f6Ed491;
 }
