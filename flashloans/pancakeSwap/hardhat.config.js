@@ -10,5 +10,16 @@ module.exports = {
         {version: "0.6.6"}, 
         {version: "0.8.8"}
     ]
+  },
+  networks: {
+    hardhat: {
+      forking: {
+        url: "https://bsc-dataseed.binance.org/",
+      },
+    },
+    testnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      chainId: 97
+    }
   }
 };
