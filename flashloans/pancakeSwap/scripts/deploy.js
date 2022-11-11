@@ -6,4 +6,5 @@ async function main() {
   console.log("Deploying contracts with the accounts", deployer.address)
 
   console.log()
+  console.log("Account Balance", (await deployer.getBalance()).toString()) 
 } 
