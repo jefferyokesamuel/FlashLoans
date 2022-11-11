@@ -5,4 +5,8 @@ const {
 const { anyValue } = require("@nomicfoundation/hardhat-chai-matchers/withArgs");
 const { expect } = require("chai");
 
-console.log("Tested")
+describe("Token Contract", () =>{
+  it("Prints Hello", () => {
+    console.log("Hello")
+  })
+});
