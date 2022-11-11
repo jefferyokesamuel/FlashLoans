@@ -20,4 +20,5 @@ contract PancakeFlashSwap {
     address private constant PANCAKE_ROUTER = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
 
     address private constant wBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+    address private constant USDT = 0x55d398326f99059fF775485246999027B3197955;
 }
