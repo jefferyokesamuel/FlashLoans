@@ -6,5 +6,5 @@ import "hardhat/console.sol";
 //Uniswap Interface
 
 contract PancakeFlashSwap {
-    
+
 }
