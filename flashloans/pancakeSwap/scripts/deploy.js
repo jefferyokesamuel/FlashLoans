@@ -11,4 +11,5 @@ async function main() {
   const Token = ethers.getContractFactory("PancakeFlashSwap");
   const token = await Token.deploy()
 
+  console.log("Token address:", token.address)
 } 
