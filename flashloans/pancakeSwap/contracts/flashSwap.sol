@@ -5,6 +5,7 @@ import "hardhat/console.sol";
 
 //Uniswap Interface and libraries
 import "./libraries/UniswapV2Library.sol";
+import "./libraries/SafeERC20.sol";
 
 contract PancakeFlashSwap {
 
