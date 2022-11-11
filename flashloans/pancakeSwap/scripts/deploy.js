@@ -2,4 +2,8 @@ const { etherscan } = require("../../../hardhatTest/hardhat.config");
 
 async function main() {
   const [deployer] = await ethers.getSigners()
+
+  console.log("Deploying contracts with the accounts", deployer.address)
+
+  console.log()
 } 
