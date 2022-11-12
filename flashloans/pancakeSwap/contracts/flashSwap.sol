@@ -29,4 +29,7 @@ contract PancakeFlashSwap {
     uint256 private deadline = block.timestamp + 1 days;
     uint256 private constant MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935;
 
+    //Fund Swap Contract
+    //Provides a function that allows contract to be funded
+    function fundFlashSwapContract(address _owner, address _token, uint256 _amount) public {
 }
