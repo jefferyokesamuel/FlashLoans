@@ -80,6 +80,7 @@ contract PancakeFlashSwap {
 
         //Decode Data to calculate the repayment
         (address tokenBorrow, uint256 amount) = abi.decode(_data (address, uint256));
+        (address tokenBorrow, uint256 amount) = abi.decode(_data, (address, uint256));
 
         //Calculate the amount to repay at the end
         uint256 fee = ((amount * 3) / 997) + 1;
