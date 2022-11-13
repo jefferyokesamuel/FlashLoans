@@ -70,6 +70,7 @@ contract PancakeFlashSwap {
         IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
     }
 
+    function pancakeCall(address _sender, uint256 _amount0, uint256 _amount1, bytes calldata _data) external {
         //Ensure request comes from contract
         address token0 = IUniswapV2Pair(msg.sender).token0();
         address token1 = IUniswapV2Pair(msg.sender).token1();
