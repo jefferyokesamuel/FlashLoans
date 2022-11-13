@@ -72,6 +72,8 @@ contract PancakeFlashSwap {
 
         //Ensure request comes from contract
         address pair = IUniswapV2Factory(PANCAKE_FACTORY).getPair(token0, token1);
+        require(msg.sender == pair, "sender needs to match the pair address");
+        require(_sender == address(this), "Sender should match this contract");
 
 
         //Decode Data to calculate the repayment
