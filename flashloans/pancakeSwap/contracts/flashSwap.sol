@@ -70,6 +70,7 @@ contract PancakeFlashSwap {
         IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
     }
 
+        //Ensure request comes from contract
         address pair = IUniswapV2Factory(PANCAKE_FACTORY).getPair(token0, token1);
 
 
