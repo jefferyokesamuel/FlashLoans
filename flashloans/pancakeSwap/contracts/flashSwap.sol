@@ -56,6 +56,8 @@ contract PancakeFlashSwap {
 
         //return error ifcombination doesnt exist
         require(pair != address[0], "Pool does not exist");
+
+        //Figure out which token (0 or 1) has the amount and assign
         address token0 = IUniswapV2Pair(pair).token0();
         address token1 = IUniswapV2Pair(pair).token1();
         uint amount0Out = _tokenBorrow == token0 ? _amount : 0;
