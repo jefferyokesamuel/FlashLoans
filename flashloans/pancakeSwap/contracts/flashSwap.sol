@@ -51,6 +51,7 @@ contract PancakeFlashSwap {
         IERC20(CROX).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
         IERC20(CAKE).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
 
+        //GET FACTORY PAIR FOR COMBINED TOKENS
         address pair = IUniswapV2Factory(PANCAKE_FACTORY).getPair(_tokenBorrow, WBNB);
 
         //return error ifcombination doesnt exist
