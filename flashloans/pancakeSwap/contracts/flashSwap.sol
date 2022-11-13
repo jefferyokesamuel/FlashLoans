@@ -45,5 +45,6 @@ contract PancakeFlashSwap {
 
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
         IERC20(CROX).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
+        IERC20(CAKE).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
 
 }
