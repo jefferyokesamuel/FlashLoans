@@ -62,6 +62,11 @@ contract PancakeFlashSwap {
         address token1 = IUniswapV2Pair(pair).token1();
         uint amount0Out = _tokenBorrow == token0 ? _amount : 0;
         uint amount1Out = _tokenBorrow == token0 ? _amount : 0;
+
+        //Passing Data ad bytes so the swap function knows its a flashloan
+
+        //Execute the Initial Swap
+        IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
     }
 
     function pancakeCall(address _sender, uint256 _amount0, uint256 _amount1, bytes calldata _data) external{
