@@ -2,6 +2,9 @@ const { ethers } = require('hardhat')
 const { expect, assert } = require("chai");
 const { impersonateFundErc20 } = require("../utils/utilities")
 const { abi } = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json")
+const { provider } = ethers.provider
+
+describe('Flash Loan Contract', () => {
   let FLASH_LOAN, BORROW_AMOUNT, FUND_AMOUNT, initiateFundHuman, txArbitrage, gasUsedUSD
 
   const BUSD_WHALE = "0xf977814e90da44bfa03b6295a0616a897441acec"
