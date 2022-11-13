@@ -83,7 +83,7 @@ contract PancakeFlashSwap {
 
         //Calculate the amount to repay at the end
         uint256 fee = ((amount * 3) / 997) + 1;
-        uint256 amountToRepay = amount + fee
+        uint256 amountToRepay = amount + fee;
 
         //Do Arbitrage
         
