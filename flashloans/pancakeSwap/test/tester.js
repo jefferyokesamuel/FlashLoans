@@ -18,4 +18,6 @@ describe('Flash Loan Contract', () => {
   const BNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
   const USDT = "0x55d398326f99059fF775485246999027B3197955";
 
+  const BASE_TOKEN_ADDRESS = BUSD
+
 });
