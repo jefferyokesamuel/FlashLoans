@@ -20,4 +20,5 @@ describe('Flash Loan Contract', () => {
 
   const BASE_TOKEN_ADDRESS = BUSD
 
+  const tokenBase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
 });
