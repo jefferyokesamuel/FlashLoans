@@ -43,6 +43,8 @@ contract PancakeFlashSwap {
         return IERC20(_address).balanceOf(address(this));
     }
 
+    //Initiate Arbitrage
+    //Begins reciving loan and performing arbitrage trades
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
         IERC20(BUSD).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
         IERC20(USDT).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
