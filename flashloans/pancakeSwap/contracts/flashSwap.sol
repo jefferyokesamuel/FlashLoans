@@ -52,6 +52,9 @@ contract PancakeFlashSwap {
         IERC20(CAKE).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
 
         require(pair != address[0], "Pool does not exist");
+    }
+
+    function pancakeCall(address _sender, uint256 _amount0, uint256 _amount1, bytes calldata _data) external{
 
     }
 }
