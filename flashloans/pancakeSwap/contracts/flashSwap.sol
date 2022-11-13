@@ -38,6 +38,7 @@ contract PancakeFlashSwap {
     } 
 
     //Get Contract Balance
+    function getBalanceofToken(address _address) public view returns(uint256) {
 
 
 }
