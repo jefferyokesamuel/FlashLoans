@@ -68,10 +68,6 @@ describe("Read and write to the blockchain", () => {
         assert(txSwap.hash)
 
         const mainnetForkProvider = ethers.provider
-        //console.log(txSwap)
-
-        // const reciept = await mainnetForkProvider.formatter.formats
-        // console.log(reciept) 
         const txRecipt = await mainnetForkProvider.waitForTransaction(txSwap.hash)
 
         console.log("SWAP TRANSACTION")
