@@ -37,6 +37,8 @@ describe('Flash Loan Contract', () => {
     const borrowAmountHuman = "10"
     BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
 
+    //Configure Funding
+    initialFundingHuman = "1000"
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
   })
 });
