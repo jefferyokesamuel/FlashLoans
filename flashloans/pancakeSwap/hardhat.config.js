@@ -12,11 +12,12 @@ module.exports = {
     allowUnlimitedContractSize: true
   },
   networks: {
+  
     hardhat: {
       forking: {
         url: "https://bsc-dataseed.binance.org/",
-        allowUnlimitedContractSize: true
       },
+      allowUnlimitedContractSize: true
     },
     testnet: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
@@ -29,7 +30,6 @@ module.exports = {
     mainnet: {
       url: "https://bsc-dataseed.binance.org/",
       chainId: 56,
-      allowUnlimitedContractSize: true
     }
   }
 };
