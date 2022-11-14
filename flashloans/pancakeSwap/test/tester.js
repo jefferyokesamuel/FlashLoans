@@ -32,6 +32,9 @@ describe('Flash Loan Contract', () => {
     const FlashLoan = await ethers.getContractFactory("PancakeFlashSwap")
     FLASH_LOAN = await FlashLoan.deploy()
     await FlashLoan.deployed()
+
+    //Configure Borrowing
+    const borrowAmountHuman = "10"
     BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
 
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
