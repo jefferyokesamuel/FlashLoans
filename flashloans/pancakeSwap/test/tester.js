@@ -31,5 +31,7 @@ describe('Flash Loan Contract', () => {
   it("General Test", async () => {
     FLASH_LOAN = await FlashLoan.deploy()
     await FlashLoan.deployed()
+    BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
+
   })
 });
