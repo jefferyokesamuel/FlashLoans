@@ -28,5 +28,4 @@ describe('Flash Loan Contract', () => {
     expect(whale_balance).not.equal("0")
   })
 
-  it("General Test")
 });
