@@ -28,7 +28,6 @@ describe('Flash Loan Contract', () => {
     const whale_balance = await provider.getBalance(BUSD_WHALE)
     expect(whale_balance).not.equal("0")
 
-  it("General Test", async () => {
     //Deply FlashLoan
     const FlashLoan = await ethers.getContractFactory("PancakeFlashSwap")
     FLASH_LOAN = await FlashLoan.deploy()
