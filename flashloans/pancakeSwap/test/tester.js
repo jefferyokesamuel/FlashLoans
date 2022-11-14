@@ -29,6 +29,7 @@ describe('Flash Loan Contract', () => {
     expect(whale_balance).not.equal("0")
 
   it("General Test", async () => {
+    const FlashLoan = await ethers.getContractFactory("PancakeFlashSwap")
     FLASH_LOAN = await FlashLoan.deploy()
     await FlashLoan.deployed()
     BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
