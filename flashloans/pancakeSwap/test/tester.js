@@ -49,6 +49,8 @@ describe('Flash Loan Contract', () => {
   describe('Arbitrage Execution', () => { 
         const flashLoanBalance = await FLASH_LOAN.getBalanceOfToken(BASE_TOKEN_ADDRESS)
 
+        const flashLoanBalanceHuman = ethers.utils.parseUnits(flashLoanBalance, DECIMALS)
+
         console.log(flashLoanBalance)
         expect(Number(flashLoanBalanceHuman)).equal(Number(initialFundingHuman))
     });
