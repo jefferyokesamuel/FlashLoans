@@ -27,9 +27,7 @@ describe('Flash Loan Contract', () => {
     //Ensure the whale has the balance
     const whale_balance = await provider.getBalance(BUSD_WHALE)
     expect(whale_balance).not.equal("0")
-  })
 
   it("General Test", async () => {
-    console.log(ethers.utils.formatUnits(whale_balance.toString(), DECIMALS))
   })
 });
