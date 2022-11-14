@@ -42,7 +42,7 @@ describe('Flash Loan Contract', () => {
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
 
     //Fund Our Contract - For Testing Only
-
+    await impersonateFundErc20(tokenBase, BUSD_WHALE, FLASH_LOAN.address, initialFundingHuman)
 
   })
 
