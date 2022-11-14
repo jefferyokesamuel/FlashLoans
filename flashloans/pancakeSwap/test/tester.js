@@ -3,7 +3,7 @@ const { expect, assert } = require("chai");
 const { impersonateFundErc20 } = require("../utils/utilities")
 const { abi } = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json");
 const { providers } = require("ethers");
-const { provider } = ethers.provider
+const { provider } = ethers.providers
 
 describe('Flash Loan Contract', () => {
   let FLASH_LOAN, BORROW_AMOUNT, FUND_AMOUNT, initiateFundHuman, txArbitrage, gasUsedUSD
