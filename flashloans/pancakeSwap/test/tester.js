@@ -1,4 +1,4 @@
-const { ethers } = require('hardhat')
+const { ethers } = require("hardhat")
 const { expect, assert } = require("chai");
 const { impersonateFundErc20 } = require("../utils/utilities")
 const { abi } = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json")
@@ -19,4 +19,8 @@ describe('Flash Loan Contract', () => {
 
   const tokenBase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
 
+  beforeEach(async () => {
+    //Get owner as a Signer
+    [owner] = await ethers.getSigner()
+  })
 });
