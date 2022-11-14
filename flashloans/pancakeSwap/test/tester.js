@@ -24,4 +24,6 @@ describe('Flash Loan Contract', () => {
     //Get owner as a Signer
     [owner] = await ethers.getSigner()
   })
+
+  it("General Test")
 });
