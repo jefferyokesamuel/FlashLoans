@@ -23,6 +23,7 @@ describe('Flash Loan Contract', () => {
   beforeEach(async () => {
     //Get owner as a Signer
     [owner] = await ethers.getSigner()
+    const whale_balance = await provider.getBalance(BUSD_WHALE)
   })
 
   it("General Test")
