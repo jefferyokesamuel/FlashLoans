@@ -24,6 +24,8 @@ describe('Flash Loan Contract', () => {
     //Get owner as a Signer
     [owner] = await ethers.getSigner()
     const whale_balance = await provider.getBalance(BUSD_WHALE)
+    console.log(whale_balance)
+    expect(whale_balance).not.equal("0")
   })
 
   it("General Test")
