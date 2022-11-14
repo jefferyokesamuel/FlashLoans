@@ -28,4 +28,8 @@ describe('Flash Loan Contract', () => {
     expect(whale_balance).not.equal("0")
   })
 
+  it("General Test", async () => {
+    const whale_balance = await provider.getBalance(BUSD_WHALE)
+    console.log(whale_balance)
+  })
 });
