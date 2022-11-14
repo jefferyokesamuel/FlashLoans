@@ -1,9 +1,10 @@
-const { ethers } = require("ethers")
+const { ethers } = require("hardhat")
 const { expect, assert } = require("chai");
 const { impersonateFundErc20 } = require("../utils/utilities")
 const { abi } = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json");
-const { providers } = require("ethers");
-const { provider } = ethers.providers
+
+const provider  = ethers.provider
+//console.log(provider)
 
 describe('Flash Loan Contract', () => {
   let FLASH_LOAN, BORROW_AMOUNT, FUND_AMOUNT, initiateFundHuman, txArbitrage, gasUsedUSD
@@ -22,10 +23,10 @@ describe('Flash Loan Contract', () => {
 
   beforeEach(async () => {
     //Get owner as a Signer
-    [owner] = await ethers.getSigner()
+    [owner] = await ethers.getSigners()
     //Ensure the whale has the balance
     const whale_balance = await provider.getBalance(BUSD_WHALE)
-    expect(whale_balance).not.equal("0")
+    //expect(whale_balance).not.equal("0")
   })
 
   it("General Test", async () => {
