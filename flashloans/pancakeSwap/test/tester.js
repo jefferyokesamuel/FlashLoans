@@ -30,7 +30,6 @@ describe('Flash Loan Contract', () => {
   })
 
   it("General Test", async () => {
-    const whale_balance = await provider.getBalance(BUSD_WHALE)
     console.log(ethers.utils.formatUnits(whale_balance.toString(), DECIMALS))
   })
 });
