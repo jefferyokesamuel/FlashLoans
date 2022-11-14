@@ -31,7 +31,7 @@ describe('Flash Loan Contract', () => {
     //Deply FlashLoan
     const FlashLoan = await ethers.getContractFactory("PancakeFlashSwap")
     FLASH_LOAN = await FlashLoan.deploy()
-    await FlashLoan.deployed()
+    await FlashLoan.deploy()
 
     //Configure Borrowing
     const borrowAmountHuman = "10"
