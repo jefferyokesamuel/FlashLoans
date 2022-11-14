@@ -23,6 +23,8 @@ describe('Flash Loan Contract', () => {
   beforeEach(async () => {
     //Get owner as a Signer
     [owner] = await ethers.getSigner()
+
+    //Ensure the whale has the balance
     const whale_balance = await provider.getBalance(BUSD_WHALE)
     console.log(whale_balance)
     expect(whale_balance).not.equal("0")
