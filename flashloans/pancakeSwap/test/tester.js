@@ -41,4 +41,5 @@ describe('Flash Loan Contract', () => {
     initialFundingHuman = "1000"
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
   })
+
 });
