@@ -45,13 +45,14 @@ describe('Flash Loan Contract', () => {
     await impersonateFundErc20(tokenBase, BUSD_WHALE, FLASH_LOAN.address, initialFundingHuman)
 
   })
-
   describe('Arbitrage Execution', () => { 
+    it('Ensures the Contract is funded', async () => {
         const flashLoanBalance = await FLASH_LOAN.getBalanceOfToken(BASE_TOKEN_ADDRESS)
 
         const flashLoanBalanceHuman = ethers.utils.parseUnits(flashLoanBalance, DECIMALS)
 
         console.log(flashLoanBalance)
+        
         expect(Number(flashLoanBalanceHuman)).equal(Number(initialFundingHuman))
     });
     
