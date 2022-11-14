@@ -49,5 +49,6 @@ describe('Flash Loan Contract', () => {
   describe('Arbitrage Execution', () => { 
         const flashLoanBalance = await FLASH_LOAN.getBalanceOfToken(BASE_TOKEN_ADDRESS)
 
+        console.log(flashLoanBalance)
         expect(Number(flashLoanBalanceHuman)).equal(Number(initialFundingHuman))
 });
