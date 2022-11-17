@@ -57,5 +57,6 @@ describe('Flash Loan Contract', () => {
         //expect(Number(flashLoanBalanceHuman)).equal(Number(initialFundingHuman))
     });
     
+    it('Executes the arbitrage', () => {
    })
 });
