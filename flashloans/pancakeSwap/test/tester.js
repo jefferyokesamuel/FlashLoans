@@ -57,6 +57,7 @@ describe('Flash Loan Contract', () => {
         //expect(Number(flashLoanBalanceHuman)).equal(Number(initialFundingHuman))
     });
     
+      txArbitrage = await FLASH_LOAN.startArbitrage(BASE_TOKEN_ADDRESS, BORROW_AMOUNT)
     })
    })
 });
