@@ -15,7 +15,6 @@ const {
 //Standard Provider
 const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.binance.org/")
 
-//COnnect to Factore
 //Connect to Factore
 const contractFactory = new ethers.Contract(factoryAddress,factoryABI,provider)
 
