@@ -39,6 +39,7 @@ const getPrices = async (amount) => {
     const decimals2 = await token2.decimals()
 
      //Convert Amount out - decimals
+     //Convert Amount out - Human readable
     const readableAmount = ethers.utils.formatUnits(amountsOut[1].toString(),decimals)
 
      //Log Output
