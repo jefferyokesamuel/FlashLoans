@@ -1,4 +1,5 @@
-const { etherscan } = require("../../../hardhatTest/hardhat.config");
+// const { etherscan } = require("../../../hardhatTest/hardhat.config");
+const { ethers } = require('hardhat')
 
 async function main() {
   const [deployer] = await ethers.getSigners()
@@ -7,14 +8,16 @@ async function main() {
 
   console.log("Account Balance", (await deployer.getBalance()).toString()) 
 
-  const Token = ethers.getContractFactory("PancakeFlashSwap");
+  const Token = ethers.getContractFactory("PancakeFlashSwap"); 
   const token = await Token.deploy()
 
-  console.log("Token address:", token.address)
+  console.log("Token address: ", token.address)
 
 }
 
-main().then(() => process.exit(0)).catch((error) => (
-  console.log(error),
-  process.exit(1)
+main()
+  .then(() => process.exit(0))
+  .catch((error) => (
+    console.log(error),
+    process.exit(1)
 ))
