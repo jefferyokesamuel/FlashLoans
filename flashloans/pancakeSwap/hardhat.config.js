@@ -9,7 +9,7 @@ module.exports = {
         {version: "0.6.6"}, 
         {version: "0.8.8"}
     ],
-    allowUnlimitedContractSize: true
+    // allowUnlimitedContractSize: true
   },
   networks: {
   
@@ -17,7 +17,7 @@ module.exports = {
       forking: {
         url: "https://bsc-dataseed.binance.org/",
       },
-      allowUnlimitedContractSize: true
+      // allowUnlimitedContractSize: true
     },
     testnet: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
@@ -25,7 +25,7 @@ module.exports = {
       accounts: [
         "0x7ca4b79101f50cd1c82d6f8729f98e23b6a652c78fe3c2c492edba51a0b56f40"
       ],
-      allowUnlimitedContractSize: true
+      // allowUnlimitedContractSize: true
     },
     mainnet: {
       url: "https://bsc-dataseed.binance.org/",
