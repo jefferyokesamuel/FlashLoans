@@ -37,11 +37,11 @@ describe('Flash Loan Contract', () => {
     const borrowAmountHuman = "1"
     BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
 
-    //Configure Funding - For Testing Only
+    // Configure Funding - For Testing Only
     initialFundingHuman = "1000"
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
 
-    //Fund Our Contract - For Testing Only
+    // Fund Our Contract - For Testing Only
     const transact = await impersonateFundErc20(tokenBase, BUSD_WHALE, FLASH_LOAN.address, initialFundingHuman)
     console.log(transact)
 
