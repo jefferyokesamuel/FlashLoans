@@ -8,8 +8,8 @@ const provider  = ethers.provider
 
 describe('Flash Loan Contract', () => {
   let FLASH_LOAN, BORROW_AMOUNT, FUND_AMOUNT, initialFundingHuman, txArbitrage, gasUsedUSD
-  const DECIMALS = 18
 
+  const DECIMALS = 18
   const BUSD_WHALE = "0xbe0eb53f46cd790cd13851d5eff43d12404d33e8"
   const BUSD = "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
   const BNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
