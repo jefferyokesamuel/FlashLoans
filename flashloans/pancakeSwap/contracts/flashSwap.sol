@@ -26,7 +26,7 @@ contract PancakeFlashSwap {
     address private constant USDT = 0x55d398326f99059fF775485246999027B3197955;
     address private constant CROX = 0x2c094F5A7D1146BB93850f629501eB749f6Ed491;
 
-    //Trade Variables
+    // Trade Variables
     uint256 private deadline = block.timestamp + 1 days;
     uint256 private constant MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935;
 
