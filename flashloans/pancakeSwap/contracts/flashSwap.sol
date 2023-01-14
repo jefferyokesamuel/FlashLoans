@@ -30,7 +30,7 @@ contract PancakeFlashSwap {
     uint256 private deadline = block.timestamp + 1 days;
     uint256 private constant MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935;
 
-    // Fund Swap Contract
+    // Fund Smart Contract
     // Provides a function that allows contract to be funded
     function fundFlashSwapContract(address _owner, address _token, uint256 _amount) public {
         IERC20(_token).transferFrom(_owner, address(this), _amount);
@@ -45,8 +45,8 @@ contract PancakeFlashSwap {
         return IERC20(_address).balanceOf(address(this));
     }
 
-    //Initiate Arbitrage
-    //Begins reciving loan and performing arbitrage trades
+    // Initiate Arbitrage
+    // Begins reciving loan and performing arbitrage trades
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
         IERC20(BUSD).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
         IERC20(USDT).safeApprove(address (PANCAKE_ROUTER), MAX_INT);
