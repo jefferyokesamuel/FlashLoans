@@ -63,7 +63,7 @@ contract PancakeFlashSwap {
         address token0 = IUniswapV2Pair(pair).token0();
         address token1 = IUniswapV2Pair(pair).token1();
         uint amount0Out = _tokenBorrow == token0 ? _amount : 0;
-        uint amount1Out = _tokenBorrow == token0 ? _amount : 0;
+        uint amount1Out = _tokenBorrow == token1 ? _amount : 0;
 
         //Passing Data and bytes so the swap function knows its a flashloan
         bytes memory data = abi.encode(_tokenBorrow, _amount);
