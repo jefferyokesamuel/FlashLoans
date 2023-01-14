@@ -56,7 +56,6 @@ contract PancakeFlashSwap {
         //GET FACTORY PAIR FOR COMBINED TOKENS
         address pair = IUniswapV2Factory(PANCAKE_FACTORY).getPair(_tokenBorrow, WBNB);
 
-        //return error ifcombination doesnt exist
        // require(pair = address[0], "Pool does not exist");
 
         //Figure out which token (0 or 1) has the amount and assign
