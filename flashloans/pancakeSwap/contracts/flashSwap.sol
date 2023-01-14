@@ -39,8 +39,8 @@ contract PancakeFlashSwap {
         //
     } 
 
-    //Get Contract Balance
-    //Allow public view of contract balance
+    // Get Contract Balance
+    // Allow public view of contract balance
     function getBalanceofToken(address _address) public view returns(uint256) {
         return IERC20(_address).balanceOf(address(this));
     }
