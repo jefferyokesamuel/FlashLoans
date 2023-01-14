@@ -65,7 +65,7 @@ contract PancakeFlashSwap {
         uint amount0Out = _tokenBorrow == token0 ? _amount : 0;
         uint amount1Out = _tokenBorrow == token0 ? _amount : 0;
 
-        //Passing Data ad bytes so the swap function knows its a flashloan
+        //Passing Data and bytes so the swap function knows its a flashloan
         bytes memory data = abi.encode(_tokenBorrow, _amount);
 
         //Execute the Initial Swap to get the loan
