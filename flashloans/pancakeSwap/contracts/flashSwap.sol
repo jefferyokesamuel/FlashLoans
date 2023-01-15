@@ -80,10 +80,10 @@ contract PancakeFlashSwap {
         require(msg.sender == pair, "sender needs to match the pair address");
         require(_sender == address(this), "Sender should match this contract");
 
-        //Decode Data to calculate the repayment
+        // Decode Data to calculate the repayment
         (address tokenBorrow, uint256 amount) = abi.decode(_data, (address, uint256));
 
-        //Calculate the amount to repay at the end
+        // Calculate the amount to repay at the end
         uint256 fee = ((amount * 3) / 997) + 1;
         uint256 amountToRepay = amount + fee;
 
