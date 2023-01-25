@@ -15,7 +15,7 @@ const {
 //Standard Provider
 const provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/DFo-cWrsIrwN46dSsl1NIYdrX3jqtxhD")
 
-//COnnect to Factore
+//Connect to Factore
 const contractFactory = new ethers.Contract(factoryAddress,factoryABI,provider)
 
 //Connect to Router
