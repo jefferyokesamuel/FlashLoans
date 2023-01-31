@@ -50,6 +50,8 @@ describe('FlashLoan Contract', () => {
         const flashSwapBalance = await FLASHSWAP.getBalanceOfToken(BASE_TOKEN_ADDRESS)
         const flashSwapBalanceHuman = ethers.utils.formatUnits(flashSwapBalance, DECIMALS)
 
+        console.log(flashSwapBalanceHuman)
+
         expect(Number(flashSwapBalanceHuman)).equal(Number(initialFundingHuman))
       });
       
