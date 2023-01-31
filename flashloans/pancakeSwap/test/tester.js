@@ -18,7 +18,7 @@ describe('FlashLoan Contract', () => {
   const BASE_TOKEN_ADDRESS = BUSD 
 
   const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
-  console.log(tokenbase)
+  //console.log(tokenbase)
 
   beforeEach(async () => {
     // Get the owner as the signer
