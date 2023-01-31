@@ -9,4 +9,5 @@ const provider  = ethers.provider
 
 describe('FlashLoan Contract', () => { 
   let(FLASHSWAP, BORROW_AMOUNT, FUND_AMOUNT, initiateFundHuman, txArbitrage,  gasUsedUSD)
+  const DECIMALS = 18
 })
