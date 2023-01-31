@@ -19,6 +19,7 @@ describe('FlashLoan Contract', () => {
 
   const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
   console.log(tokenbase)
+
   beforeEach(async () => {
     // Get the owner as the signer
     [owner] = await ethers.getSigners()
