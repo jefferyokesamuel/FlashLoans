@@ -46,6 +46,8 @@ describe('FlashLoan Contract', () => {
   })
 
   describe('Arbitrage Execution', () => { 
+
+        expect(Number(flashSwapBalanceHuman)).equal(Number(initialFundingHuman))
       });
       
    })
