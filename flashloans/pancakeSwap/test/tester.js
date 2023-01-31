@@ -17,4 +17,8 @@ describe('FlashLoan Contract', () => {
   const USDT = "0x55d398326f99059fF775485246999027B3197955";
   const CROX = "0x2c094F5A7D1146BB93850f629501eB749f6Ed491";
   
+  const BASE_TOKEN_ADDRESS = BUSD 
+
+  const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
+  
 })
