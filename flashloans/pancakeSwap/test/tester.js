@@ -34,7 +34,12 @@ describe('FlashLoan Contract', () => {
 
     //Configure our Borrowing
     //Configure Funding
-    
+    initialFundingHuman = "100"
+    FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
+
+    //FUnd Contract for Testing
+    await impersonateFundErc20(tokenbase, BUSD_WHALE, FlashSwap.address, initialFundingHuman)
+
   })
 
   describe('Arbitrage Execution', () => { 
