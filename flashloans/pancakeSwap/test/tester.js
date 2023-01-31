@@ -33,6 +33,8 @@ describe('FlashLoan Contract', () => {
     await FLASHSWAP.deployed()
 
     //Configure our Borrowing
+    //Configure Funding
+    
   })
 
   it('generalTest', async () =>{
