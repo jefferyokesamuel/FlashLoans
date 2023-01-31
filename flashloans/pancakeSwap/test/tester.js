@@ -28,6 +28,8 @@ describe('FlashLoan Contract', () => {
     expect(whale_balance != 0)
 
     //Deploy Smart Contract
+
+    //Configure our Borrowing
   })
 
   it('generalTest', async () =>{
