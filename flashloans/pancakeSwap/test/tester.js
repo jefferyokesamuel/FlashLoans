@@ -48,8 +48,6 @@ describe('FlashLoan Contract', () => {
   describe('Arbitrage Execution', () => { 
     
    })
-  it('generalTest', async () =>{
-    const whale_balance = await provider.getBalance(BUSD_WHALE)
     console.log (ethers.utils.formatUnits(whale_balance.toString(), DECIMALS))
   })
 })
