@@ -7,5 +7,4 @@ const provider  = ethers.provider
 
 // console.log(provider)
 
-    console.log("hello")
 })
