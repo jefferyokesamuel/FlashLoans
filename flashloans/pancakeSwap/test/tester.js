@@ -21,3 +21,7 @@ describe('FlashLoan Contract', () => {
   })
 
   it('generalTest', async () =>{
+    const whale_balance = await provider.getBalance(BUSD_WHALE)
+    console.log (whale_balance)
+  })
+})
