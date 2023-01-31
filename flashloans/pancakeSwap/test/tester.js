@@ -5,8 +5,7 @@ const { abi } = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.jso
 
 const provider  = ethers.provider
 
-// console.log(provider)
-
+//console.log(provider)
 describe('FlashLoan Contract', () => { 
   let(FLASHSWAP, BORROW_AMOUNT, FUND_AMOUNT, initiateFundHuman, txArbitrage,  gasUsedUSD)
   const DECIMALS = 18
