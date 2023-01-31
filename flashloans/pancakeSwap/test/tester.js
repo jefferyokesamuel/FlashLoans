@@ -28,6 +28,9 @@ describe('FlashLoan Contract', () => {
     expect(whale_balance != 0)
 
     //Deploy Smart Contract
+    const FlashSwap = await ethers.getContractFactory("PancakeFlashSwap")
+    FLASHSWAP = await FlashSwap.deploy()
+    await FLASHSWAP.deployed()
 
     //Configure our Borrowing
   })
