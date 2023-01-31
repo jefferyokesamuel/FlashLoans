@@ -18,10 +18,12 @@ describe('FlashLoan Contract', () => {
   const BASE_TOKEN_ADDRESS = BUSD 
 
   const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
+  console.log(tokenbase)
   beforeEach(async () => {
     // Get the owner as the signer
     [owner] = await ethers.getSigners()
 
+    //Ensure the Whale has a Balance
     const whale_balance = await provider.getBalance(BUSD_WHALE)
     expect(whale_balance != 0)
   })
