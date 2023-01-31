@@ -48,6 +48,5 @@ describe('FlashLoan Contract', () => {
   describe('Arbitrage Execution', () => { 
     
    })
-    console.log (ethers.utils.formatUnits(whale_balance.toString(), DECIMALS))
-  })
+  
 })
