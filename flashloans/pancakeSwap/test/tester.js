@@ -33,6 +33,9 @@ describe('FlashLoan Contract', () => {
     await FLASHSWAP.deployed()
 
     //Configure our Borrowing
+    const borrowAmountHuman = "100"
+    BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS)
+
     //Configure Funding
     initialFundingHuman = "100"
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS)
