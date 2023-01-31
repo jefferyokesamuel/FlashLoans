@@ -18,6 +18,8 @@ describe('FlashLoan Contract', () => {
   const BASE_TOKEN_ADDRESS = BUSD 
 
   const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
+    const whale_balance = await provider.getBalance(BUSD_WHALE)
+    expect(whale_balance != 0)
   })
 
   it('generalTest', async () =>{
