@@ -33,6 +33,7 @@ describe('FlashLoan Contract', () => {
     await FLASHSWAP.deployed()
 
     //Configure our Borrowing
+    const borrowAmountHuman = "1" 
   })
 
   it('generalTest', async () =>{
