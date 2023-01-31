@@ -7,8 +7,6 @@ const provider  = ethers.provider
 
 // console.log(provider)
 
-describe('Token Contract', () => { 
-  it('says hello', () => {
     console.log("hello")
   });
    
