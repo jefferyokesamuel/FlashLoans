@@ -19,6 +19,7 @@ describe('FlashLoan Contract', () => {
 
   const tokenbase = new ethers.Contract(BASE_TOKEN_ADDRESS, abi, provider)
 
+    console.log(whale_balance)
   const whale_balance = provider.getBalance(BUSD_WHALE)
   console.log(whale_balance)
   beforeEach(async () => {
