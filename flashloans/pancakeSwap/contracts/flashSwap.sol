@@ -45,6 +45,8 @@ contract  PancakeFlashSwap {
         return IERC20(_address).balanceOf(address(this));
     }
 
+    // Place a Trade
+    // Executed placing a Trade
     // Initiate Arbitrage
     // Begins reciving loan and performing arbitrage trades
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
