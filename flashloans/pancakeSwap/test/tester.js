@@ -67,6 +67,8 @@ describe('FlashLoan Contract', () => {
       txArbitrage = FLASHSWAP.startArbitrage(BASE_TOKEN_ADDRESS, BORROW_AMOUNT)
    });
    
+
+      console.log("Balance BUSD")
       console.log(formatedBalance)
     })
 })
