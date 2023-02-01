@@ -67,6 +67,8 @@ describe('FlashLoan Contract', () => {
       txArbitrage = FLASHSWAP.startArbitrage(BASE_TOKEN_ADDRESS, BORROW_AMOUNT)
    });
    
+      const contractBalanceBUSD = await FLASHSWAP.getBalanceOfToken(BUSD)
+      const formatedBalance = Number(ethers.utils.formatUnits(contractBalanceBUSD), DECIMALS)
 
       console.log("Balance BUSD")
       console.log(formatedBalance)
