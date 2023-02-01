@@ -54,6 +54,8 @@ contract  PancakeFlashSwap {
         path[1] = _toToken;
 
         uint256 amountRequired = IUniswapV2Router01(PANCAKE_ROUTER).getAmountOut(_amountIn, path[1]);
+
+        //Perform Arbitrage Swap
     // Initiate Arbitrage
     // Begins reciving loan and performing arbitrage trades
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
