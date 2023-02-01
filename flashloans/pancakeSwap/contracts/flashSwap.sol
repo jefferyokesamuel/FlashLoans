@@ -12,7 +12,7 @@ import "./interfaces/IUniswapV2Pair.sol";
 import "./interfaces/IUniswapV2Factory.sol";
 import "./interfaces/IERC20.sol";
 
-contract   {
+contract  PancakeFlashSwap {
     using SafeERC20 for IERC20;
 
     // Facrory and Routing Address
