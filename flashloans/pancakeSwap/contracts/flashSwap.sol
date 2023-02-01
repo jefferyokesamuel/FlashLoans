@@ -52,6 +52,7 @@ contract  PancakeFlashSwap {
         require(pair != address(0), "Pool does not exist");
 
         // Calculate Amount Out
+        address[] memory path = new address[](2);
         path[0] = _fromToken;
         path[1] = _toToken;
 
