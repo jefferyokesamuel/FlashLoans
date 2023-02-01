@@ -22,6 +22,7 @@ describe('FlashLoan Contract', () => {
   async function getBalance() {
     const whale_balance = await provider.getBalance(BUSD_WHALE)
     console.log(whale_balance)
+  }
   const whale_balance = provider.getBalance(BUSD_WHALE)
   console.log(whale_balance)
   beforeEach(async () => {
