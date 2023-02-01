@@ -56,6 +56,7 @@ describe('FlashLoan Contract', () => {
 
         console.log(flashSwapBalanceHuman)
 
+        expect(Number(flashSwapBalanceHuman)).equal(Number(initialFundingHuman))
       });
       
    })
