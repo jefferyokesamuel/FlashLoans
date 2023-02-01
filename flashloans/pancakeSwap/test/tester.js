@@ -63,6 +63,7 @@ describe('FlashLoan Contract', () => {
    it('Executes the Arbitrage', async () => {
       txArbitrage = FLASHSWAP.startArbitrage(BASE_TOKEN_ADDRESS, BORROW_AMOUNT)
    });
+   
   assert(txArbitrage)
   const contra
 })
