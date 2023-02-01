@@ -48,6 +48,8 @@ contract  PancakeFlashSwap {
     // Place a Trade
     // Executed placing a Trade
     function placeTrade(address _fromToken, address _toToken, uint256 _amountIn) private returns(uint256) {
+        address pair = IUniswapV2Factory(PANCAKE_FACTORY).getPair(_fromToken, _toToken);
+        require(pair != address(0), "Pool does not exist");
     // Initiate Arbitrage
     // Begins reciving loan and performing arbitrage trades
     function startArbitrage(address _tokenBorrow, uint256 _amount) external {
