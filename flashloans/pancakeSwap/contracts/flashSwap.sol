@@ -111,7 +111,6 @@ contract  PancakeFlashSwap {
         //Pay Yourself
        
 
-        //Pay Loan Back
         // Pay Loan Back
         IERC20(tokenBorrow).transfer(pair, amountToRepay);
     }
