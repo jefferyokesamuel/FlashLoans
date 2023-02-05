@@ -59,7 +59,6 @@ contract  PancakeFlashSwap {
         uint256 amountRequired = IUniswapV2Router01(PANCAKE_ROUTER).getAmountOut(_amountIn, path[1]);
         console.log("amount required: " + amountRequired);
 
-        //Perform Arbitrage Swap
         // Perform Arbitrage Swap
 
     }
